@@ -13,7 +13,7 @@ Add `'minify-svg'` to your list of modules.  That's all!  Mimosa will install th
 
 ## Functionality
 
-During `mimosa watch` and `mimosa build` this module will optimize`.svg` files.
+During `mimosa watch` and `mimosa build`, when the `--minify` flag is used, this module will optimize`.svg` files.
 
 Why?
 

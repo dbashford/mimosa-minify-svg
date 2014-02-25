@@ -1,6 +1,6 @@
 {
   "name": "mimosa-minify-svg",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/dbashford/mimosa-minify-svg",
   "author": "David Bashford",
   "description": "A Mimosa module to minify SVG",

@@ -42,7 +42,9 @@ var _execute = function ( mimosaConfig, options, next ) {
 
 var registration = function ( mimosaConfig, register ) {
   svgo = new SVGO( mimosaConfig.minifySvg.options );
-  register( [ "add", "update", "buildFile"], "afterCompile", _execute, [ "svg" ] );
+  if ( mimosaConfig.isMinify) {
+    register( [ "add", "update", "buildFile"], "afterCompile", _execute, [ "svg" ] );
+  }
 };
 
 module.exports = {

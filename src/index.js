@@ -33,6 +33,7 @@ var _execute = function ( mimosaConfig, options, next ) {
     } catch (err) {
       // error seems to both be captured in callback result.error and thrown
       mimosaConfig.log.error( "Error minifying SVG [[ " + file.inputFileName + " ]], ", err );
+      next();
     }
 
   } else  {
